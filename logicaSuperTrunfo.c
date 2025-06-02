@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(){
     char cidade[100], cidade2[100], codigo[100], codigo2[100], estado[100], estado2[300];
-    int populacao, populacao2,  turistico, turistico2;
+    int populacao, populacao2,  turistico, turistico2, cidadePrimeira, cidadeSegunda;
     float area, area2, pib, pib2;
     float densidade, densidade2; 
     float capita, capita2;
@@ -69,11 +71,106 @@ int main(){
     printf("\n");
     printf("Nome do Estado2: %s - Código2: %s - Cidade2: %s - População2: %f -  2Area²: %f - PIB2: %f - 2Turistico: %d\n" , estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
     printf("A média percapita é: %.2f\n", capita2);
-    printf("A média de densidade papulacional é: %.2f\n", densidade2);
+    printf("A média de densidade populacional é: %.2f\n", densidade2);
     printf("A soma da População + area + PIB é: %.6d\n" , SegundaCidade);
     printf("\n");
 
-    if(populacao > populacao2) {
+    printf("Escolha uma opção para comparação\n");
+    printf("1: PIB\n");
+    printf("2: Área\n");
+    printf("3: População\n");
+    printf("4: Ponto turistico\n", cidade);
+    printf("5: Média per capita\n");
+    printf("6: Densidade\n");
+    printf("7: Cidade\n");
+    printf("Escolha: ");
+    scanf("%d", &cidadePrimeira);
+
+    switch (cidadePrimeira)
+      {
+        case 1:
+        printf("%s: PIB -", cidade);
+        break;
+
+        case 2:
+        printf("%s: Área -", cidade);
+        break;
+
+        case 3:
+        printf("%s: População -", cidade);
+        break;
+
+        case 4:("%s: Ponto turistico -", cidade);
+        break;
+
+        case 5:
+        printf("%s: Média Per capita -", cidade);
+        break;
+
+        case 6:
+        printf("%s: Densidade -", cidade);
+        break;
+
+        case 7:
+        printf("%s: Cidade -", cidade);
+        break;
+
+        default:
+        printf("Opção invalida:\n");
+        break;
+      }
+
+        switch (cidadeSegunda)
+      {
+        case 1:
+        printf("%s: PIB -", cidade2);
+        break;
+
+        case 2:
+        printf("%s: Área -", cidade2);
+        break;
+
+        case 3:
+        printf("%s: População -", cidade2);
+        break;
+
+        case 4:("%s: Ponto turistico -", cidade2);
+        break;
+
+        case 5:
+        printf("%s: Média Per capita -", cidade2);
+        break;
+
+        case 6:
+        printf("%s: Densidade -", cidade2);
+        break;
+
+        case 7:
+        printf("%s: Cidade -", cidade2);
+        break;     
+      }
+
+      if (cidade == cidade2)
+      {
+        printf("***EMPATE***\n");
+      }else if ((cidade))
+      {
+        printf(" %s GANHOU!!!",cidade);
+      }else{
+        printf(" %s PERDEU!!!", cidade);
+      }
+
+
+
+    
+
+
+
+
+
+
+/*
+   if(populacao > populacao2) {
         printf("A População de %s é maior que a População de %s!\n", cidade, cidade2);
     }else {
         printf("A População de %s é maior que a População de %s!\n", cidade2,cidade);
@@ -114,20 +211,12 @@ int main(){
     }else{
         printf("Soma de todos itens da cidade %s (%d) é maior que da cidade %s (%d) !\n", cidade2,SegundaCidade,cidade,PrimeiraCidade);
     }
-
-    
-
+ */
 
 
 
 
 
-
-
-    /*printf("O valor da 1° População  é maior que da 2° População? %d\n", populacao > populacao2);
-    printf("O valor da 1° Area  é maior que da 2° Area? %d\n", area > area2);
-    printf("O valor do 1° PIB  é maior que do 2° PIB? %d\n", pib > pib2);
-    printf("O valor do 1° Ponto Turistico  é maior que do que o 2° Ponto Turistico? %d\n", turistico > turistico2);*/
 
 
 
