@@ -167,6 +167,9 @@ int main(){
                 printf("Empate!\n");
             break;
 
+             default:
+            printf("Opção inválida!\n");
+
     }
 
 
