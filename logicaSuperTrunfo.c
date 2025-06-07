@@ -62,12 +62,12 @@ int main(){
     PrimeiraCidade =  populacao + area + pib;
     SegundaCidade = populacao2 + area2 + pib2;
      
-    printf("Nome do Estado:  %s - Código: %s - Cidade: %s - População: %f - Area²: %f - PIB: %f - Turistico: %d\n"  , estado, codigo,  cidade, populacao,area, pib, turistico);
+    printf("Nome do Estado:  %s - Código: %s - Cidade: %s - População: %d - Area²: %f - PIB: %f - Turistico: %d\n"  , estado, codigo,  cidade, populacao,area, pib, turistico);
     printf("A média percapita é: %.2f\n", capita);
     printf("A média de  densidade populacional é: %.2f\n", densidade);
     printf("A soma da População + area + PIB é: %.6d\n" , PrimeiraCidade);
     printf("\n");
-    printf("Nome do Estado2: %s - Código2: %s - Cidade2: %s - População2: %f -  2Area²: %f - PIB2: %f - 2Turistico: %d\n" , estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
+    printf("Nome do Estado2: %s - Código2: %s - Cidade2: %s - População2: %d -  2Area²: %f - PIB2: %f - 2Turistico: %d\n" , estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
     printf("A média percapita é: %.2f\n", capita2);
     printf("A média de densidade populacional é: %.2f\n", densidade2);
     printf("A soma da População + area + PIB é: %.6d\n" , SegundaCidade);
@@ -110,7 +110,7 @@ int main(){
 
             case 3:
             printf("Comparando POPULAÇÃO:\n");
-            printf("%s: %.2f | %s: %.2f\n", cidade, populacao, cidade2, populacao2);
+            printf("%s: %.2d | %s: %.2d\n", cidade, populacao, cidade2, populacao2);
             if (populacao > populacao2)
                 printf("%s venceu!\n", cidade);
             else if (populacao < populacao2)
@@ -121,16 +121,15 @@ int main(){
 
 
             case 4:
-            printf("Comparando Pontos Turísticos:\n");
-            printf("%s: %.2f | %s: %.2f\n", cidade, turistico, cidade2, turistico2);
+            printf("Comparando Pontos Turisticos:\n");
+            printf("%s: %.2d | %s: %.2d\n", cidade, turistico, cidade2, turistico2);
             if (turistico > turistico2)
                 printf("%s venceu!\n", cidade);
-            else if (turistico < pib2)
+            else if (turistico < turistico2)
                 printf("%s venceu!\n", cidade2);
             else
                 printf("Empate!\n");
             break;
-
 
             case 5:
             printf("Comparando Média Per Capita:\n");
