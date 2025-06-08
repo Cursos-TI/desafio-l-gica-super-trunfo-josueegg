@@ -11,23 +11,22 @@ int main(){
 
 
     printf("Digite o seu Estado:  \n");
-    scanf("%s" , &estado);
+    scanf("%s" , estado);
 
     printf("Digite o segundo Estado:  \n");
-    scanf("%s" , &estado2);
+    scanf("%s" , estado2);
 
     printf("Digite o Código: \n");
-    scanf("%s" , &codigo);
+    scanf("%s" , codigo);
 
     printf("Digite o segundo Código: \n");
-    scanf("%s" , &codigo2);
+    scanf("%s" , codigo2);
 
     printf("Digite sua Cidade: \n");
-    scanf("%s" , &cidade);
+    scanf("%s" , cidade);
 
     printf("Digite sua segunda Cidade: \n");
-    scanf("%s" , &cidade2);
-
+    scanf("%s" , cidade2);
     printf("Digite o PIB: \n");
     scanf("%f" , &pib);
 
@@ -77,7 +76,7 @@ int main(){
     printf("1: PIB\n");
     printf("2: Área\n");
     printf("3: População\n");
-    printf("4: Ponto turístico\n", cidade);
+    printf("4: Ponto turístico\n");
     printf("5: Média per capita\n");
     printf("6: Densidade\n");
     printf("7: Cidade\n");
